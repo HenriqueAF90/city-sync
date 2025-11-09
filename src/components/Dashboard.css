@@ -1,0 +1,15 @@
+.dashboard-container { min-height:100vh; padding:18px; box-sizing:border-box }
+.dashboard-header { display:flex; align-items:center; justify-content:space-between }
+.logo-small { width:36px; height:36px; background:linear-gradient(135deg,#e0f7ff,#bfefff); border-radius:8px }
+.card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin-top:16px }
+.card { background:#f0fbff; border:1px solid #e6f0f6; padding:18px; border-radius:10px; cursor:pointer; min-height:88px; display:flex; align-items:center; justify-content:center }
+.card-content { font-weight:700; color:#0f4c63; text-align:center }
+.logout { background:transparent; border:1px solid #ddd; padding:8px 12px; border-radius:8px; cursor:pointer }
+
+/* Responsive: stack cards in a single column on small screens and enlarge touch targets */
+@media (max-width: 640px) {
+	.dashboard-header { padding: 8px 0 }
+	.card-grid { grid-template-columns: 1fr; gap:10px }
+	.card { padding:16px; min-height:72px }
+	.card-content { font-size:16px }
+}

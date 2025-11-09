@@ -1,0 +1,12 @@
+.payments-container { min-height:100vh; padding:18px }
+.payments-header { display:flex; gap:12px; align-items:center }
+.payments-grid { display:flex; gap:12px; margin-top:12px }
+.payments-card { background:#f7fbff; border:1px solid #e6f0f6; padding:14px; border-radius:10px; cursor:pointer; flex:1; min-height:88px; display:flex; flex-direction:column; justify-content:center }
+.payments-card-title { font-weight:700 }
+.payments-result { margin-top:12px; background:#fffbe6; padding:10px; border-radius:8px }
+.ok { background:#1a4f63; color:white; border:none; padding:8px 12px; border-radius:6px }
+
+@media (max-width:640px) {
+	.payments-grid { flex-direction:column }
+	.payments-card { width:100% }
+}

@@ -1,0 +1,16 @@
+.reservations-container { min-height:100vh; padding:18px }
+.reservations-header { display:flex; gap:12px; align-items:center }
+.reservations-grid { display:flex; gap:12px; margin-top:12px }
+.reservations-card { background:#f7fbff; border:1px solid #e6f0f6; padding:14px; border-radius:10px; cursor:pointer; flex:1; min-height:88px; display:flex; flex-direction:column; justify-content:center }
+.reservations-tag { margin-top:8px; background:#e6f7ff; padding:6px 8px; border-radius:8px }
+.modal-overlay { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.45) }
+.modal-card { background:white; padding:16px; border-radius:10px; min-width:280px; max-width:420px }
+.position { font-size:28px; font-weight:700; color:#1a4f63; text-align:center }
+.modal-actions { display:flex; gap:8px; justify-content:flex-end; margin-top:12px }
+.btn-primary { background:#add8e6; color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer }
+.btn-secondary { background:transparent; border:1px solid #ddd; padding:10px 14px; border-radius:8px; cursor:pointer }
+
+@media (max-width:640px) {
+	.reservations-grid { flex-direction:column }
+	.modal-card { width:95%; margin:0 10px }
+}

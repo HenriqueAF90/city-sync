@@ -1,0 +1,13 @@
+.login-container { min-height:100vh; display:flex; align-items:center; justify-content:center; gap:24px; padding:18px }
+.logo { display:flex; flex-direction:column; align-items:center }
+.bus-icon { width:120px; height:120px; background:linear-gradient(135deg,#e0f7ff,#bfefff); border-radius:20px }
+.form { display:flex; flex-direction:column; gap:8px; min-width:260px }
+.form input { padding:10px; border-radius:8px; border:1px solid #ddd; width:100% }
+.form button { background:#1a4f63; color:white; border:none; padding:12px; border-radius:8px; cursor:pointer; width:100% }
+.error { color:#d9534f }
+
+@media (max-width: 480px) {
+	.bus-icon { width:100px; height:100px }
+	.form { min-width: unset; width:100%; max-width:360px; padding:0 12px }
+	.login-container { padding:12px }
+}

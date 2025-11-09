@@ -1,0 +1,30 @@
+/* Global base styles and responsive helpers */
+* { box-sizing: border-box; }
+html,body,#root { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #05364a;
+  background: #ffffff;
+  line-height: 1.4;
+}
+
+/* Utility: container padding that adapts */
+.container { padding: 18px; }
+
+/* Buttons: make primary/secondary large enough on mobile */
+.btn-primary, .btn-secondary, .ok, .logout { font-size: 15px; padding: 10px 14px; }
+
+/* Make interactive card elements full-width on small screens */
+@media (max-width: 640px) {
+  .card, .payments-card, .reservations-card, .lines-item { width: 100%; display: block }
+  .card-grid { grid-template-columns: 1fr !important }
+  .lines-list { gap: 8px }
+  input, .lines-search, .seat-form input { font-size: 16px }
+  button { touch-action: manipulation }
+}
+
+/* Small utilities for spacing on mobile */
+.stack-vertical { display:flex; flex-direction:column; gap:12px }
