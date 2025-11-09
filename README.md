@@ -76,4 +76,3 @@ Abra uma issue ou envie um PR com melhorias. Posso também continuar implementan
 
 ---
 
-Se quiser, eu executo `npm run start` aqui e valido que o servidor sobe no Codespace — quer que eu execute agora? 
